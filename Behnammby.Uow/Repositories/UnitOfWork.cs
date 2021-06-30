@@ -7,8 +7,9 @@ namespace Behnammby.Uow.Repositories
     {
         private DbContext _context;
 
-        public UnitOfWork(DbContext _context)
+        public UnitOfWork(DbContext context)
         {
+            _context = context;
         }
 
         public int Complete()

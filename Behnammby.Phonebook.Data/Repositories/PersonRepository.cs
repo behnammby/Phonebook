@@ -22,7 +22,7 @@ namespace Behnammby.Phonebook.Data.Repositories
                                  .SingleOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Person>> FindByNameAsyc(string lastName, int page, int limit, string firstName = null)
+        public IEnumerable<Person> FindByName(string lastName, int page, int limit, out int total, string firstName = null)
         {
             if (page <= 0 || limit <= 0)
             {
@@ -35,7 +35,7 @@ namespace Behnammby.Phonebook.Data.Repositories
 
             if (!string.IsNullOrEmpty(firstName))
             {
-                query = query.Where(person => person.FirsName.Contains(firstName));
+                query = query.Where(person => person.FirstName.Contains(firstName));
             }
 
             if (!string.IsNullOrEmpty(lastName))
@@ -43,8 +43,10 @@ namespace Behnammby.Phonebook.Data.Repositories
                 query = query.Where(person => person.LastName.Contains(lastName));
             }
 
-            return await query.Skip(skipCount).Take(limit).ToListAsync();
+            total = query.Count();
+
+            return query.Include(person => person.PhoneNumbers).Skip(skipCount).Take(limit).ToList();
         }
-        
+
     }
 }

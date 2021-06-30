@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behnammby.DataAccessLayer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behnammby.Phonebook.BusinessAccessLayer", "Behnammby.Phonebook.BusinessAccessLayer\Behnammby.Phonebook.BusinessAccessLayer.csproj", "{893E2B47-8BC3-4472-B5DF-A7CB992F7807}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behnammby.Phonebook.Service", "Behnammby.Phonebook.Service\Behnammby.Phonebook.Service.csproj", "{2E1E928B-FD65-4270-A2E1-5437B66445F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{893E2B47-8BC3-4472-B5DF-A7CB992F7807}.Release|x64.Build.0 = Release|Any CPU
 		{893E2B47-8BC3-4472-B5DF-A7CB992F7807}.Release|x86.ActiveCfg = Release|Any CPU
 		{893E2B47-8BC3-4472-B5DF-A7CB992F7807}.Release|x86.Build.0 = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|x64.Build.0 = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Debug|x86.Build.0 = Debug|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|x64.ActiveCfg = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|x64.Build.0 = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E1E928B-FD65-4270-A2E1-5437B66445F4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,3 +1,4 @@
+using Behnammby.Phonebook.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Behnammby.Phonebook.Data.Context
@@ -7,6 +8,9 @@ namespace Behnammby.Phonebook.Data.Context
         public PhonebookDbContext(DbContextOptions<PhonebookDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Person> People { get; set; }
+        public DbSet<PhoneNumber> PhoneNumbers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

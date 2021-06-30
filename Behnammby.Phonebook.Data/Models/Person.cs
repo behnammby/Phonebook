@@ -8,10 +8,11 @@ namespace Behnammby.Phonebook.Data.Models
     {
         public int Id { get; set; }
 
-        public string FirsName { get; set; }
+        public string FirstName { get; set; }
 
         public string LastName { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
